@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Sitemap: https://target-batch.pages.dev/sitemap.xml
+
+# Allow search engines to crawl all content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawling of admin or sensitive areas if any
+User-agent: *
+Disallow: /admin/
+Disallow: /_*
+
+# Allow access to CSS, JS, and media files
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.png
+Allow: *.webp
+Allow: *.mp4
+Allow: *.svg
