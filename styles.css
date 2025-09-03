@@ -1,0 +1,134 @@
+:root{
+  --quz-deep:#24163a;
+  --quz-deeper:#1f1432;
+  --quz-lilac:#e7e7ff;
+  --quz-lilac-2:#ebe9ff;
+  --quz-surface:#ffffff;
+  --quz-text:#161616;
+  --quz-muted:#6b7280;
+  --quz-border:#ececf2;
+  --quz-pill:#f2f2ff;
+  --quz-cta:#6b4df6;
+  --quz-cta-2:#8a72ff;
+  --quz-good:#22c55e;
+  --radius-12:12px;
+  --radius-16:16px;
+  --shadow-1:0 1px 2px rgba(0,0,0,.06), 0 1px 1px rgba(0,0,0,.04);
+  --shadow-2:0 6px 16px rgba(0,0,0,.10);
+  --shadow-3:0 12px 28px rgba(0,0,0,.18);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body.theme-quizard{
+  font-family:'Plus Jakarta Sans','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  color:var(--quz-text);
+  background:#fff;
+  line-height:1.5;
+}
+
+/* Container */
+.container{max-width:1160px;margin:0 auto;padding:0 20px}
+
+/* Navbar */
+.quz-nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--quz-border);
+  backdrop-filter:saturate(140%) blur(6px);
+  transition:box-shadow .2s ease, transform .2s ease;
+}
+.quz-nav .container{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{height:36px;width:auto}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:#222;text-decoration:none;font-weight:600}
+.nav-links a:hover{color:var(--quz-cta)}
+.pill.ghost{border:1.5px solid var(--quz-cta);color:var(--quz-cta);padding:8px 16px;border-radius:999px;background:transparent;font-weight:700}
+
+/* Hero */
+.main-banner.quz-hero{margin-top:70px;padding:72px 0 84px;position:relative;background:linear-gradient(180deg,var(--quz-deep) 0%,var(--quz-deeper) 100%);overflow:hidden}
+.main-title.quz-display{
+  font-weight:800;letter-spacing:-0.02em;text-align:center;color:#fff;
+  font-size:42px;line-height:1.18;margin:26px 0 28px;
+}
+.badge-word{
+  background:#7b5cf9;color:#fff;border-radius:12px;padding:2px 10px;display:inline-block;
+}
+.with-doodles .doodle-surface{
+  position:absolute;inset:0;pointer-events:none;opacity:.18;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><defs><pattern id="c" width="800" height="600" patternUnits="userSpaceOnUse" patternTransform="scale(.6)"><g fill="none" stroke="%23a997ff" stroke-width="14" stroke-linecap="round"><path d="M109 57c0 41 20 60 60 60M439 128c40-6 56-28 51-68M523 138c35 21 61 14 82-20M405 294c-23 34-17 61 16 84M445 328c38-15 50-40 36-78M511 347c37-17 47-43 30-80M626 391c26-31 23-59-8-84M581 359c-32 25-35 52-10 84M752 415c3-40-15-61-56-64M252 139c-40 0-60 20-60 60M762 545c-4-40-25-58-66-54M584 562c40 0 60-19 60-60M624 179c-37 18-46 44-28 80M167 247c-30 27-32 54-5 85M425 241c-38-12-63 1-74 40M343 366c-9-40-32-55-72-46M622 445c39 12 64-1 76-40M512 458c15 37 40 49 78 34M111 349c-39 11-53 34-43 74M189 385c4 41 26 58 66 54M314 442c0-41-20-60-60-60M90 478c38-13 50-38 36-76M682 281c28 29 56 29 84 0M760 113c-27 29-26 57 4 84M245 255c-36 18-44 45-26 80"/></g></pattern></defs><rect fill="url(%23c)" width="100%" height="100%"/></svg>');
+  background-repeat:repeat;background-size:800px 600px;
+}
+.main-banner::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:220px;background:
+    radial-gradient(240px 140px at 20% 0%, rgba(123,92,249,.25), transparent 60%),
+    radial-gradient(300px 160px at 80% 10%, rgba(167,151,255,.2), transparent 60%);
+}
+
+/* Soft cards & stat tiles */
+.soft-card{
+  background:rgba(255,255,255,.98);
+  border:1px solid var(--quz-border);
+  border-radius:16px;
+  box-shadow:var(--shadow-1);
+}
+.soft-card:hover{box-shadow:var(--shadow-2);transform:translateY(-2px);transition:all .2s ease}
+
+.stat-card{
+  background:#fff;border:1px solid var(--quz-border);border-radius:24px;padding:28px;box-shadow:var(--shadow-2)
+}
+.stat-card .price-item{background:#f8f9ff;border:1px solid #e7e8ff;border-radius:14px}
+
+/* Pricing and hero inner content (kept from your CSS where compatible) */
+.banner-image{max-width:760px;width:100%;height:auto;border-radius:16px;box-shadow:0 16px 48px rgba(0,0,0,.25);display:block;margin:0 auto}
+
+/* Section bands */
+.quz-band.white{background:#fff;padding:84px 0}
+.quz-band.gray{background:#f7f7fb;padding:84px 0}
+
+/* Title style */
+.section-title.quz-title{
+  font-size:32px;line-height:1.25;font-weight:800;text-align:center;color:#111;margin-bottom:36px
+}
+
+/* Video containers */
+.video-container{aspect-ratio:9/16;border-radius:16px;overflow:hidden;position:relative;cursor:pointer;max-width:360px;margin:0 auto;background:linear-gradient(135deg,#f4f4ff,#e9e9ff)}
+.video-thumbnail{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#fff;background:linear-gradient(135deg,rgba(107,77,246,.92),rgba(139,115,255,.92))}
+.video-thumbnail i{font-size:56px;opacity:.95}
+.video-thumbnail span{font-weight:700}
+
+/* Pills (chips) */
+.nav-pill,.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:1px solid #dedcff;background:#f5f4ff;color:#3b3b57;font-weight:600}
+.nav-pill.active,.pill.active{background:#6b4df6;color:#fff;border-color:#6b4df6}
+
+/* Social proof split row */
+.row-split{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.row-split .divider{width:1px;height:40px;background:linear-gradient(to bottom,transparent,#d9d9f9,transparent)}
+
+/* CTA button */
+.cta-btn{
+  width:100%;padding:16px 20px;border:none;border-radius:16px;
+  background:linear-gradient(135deg,#6b4df6,#8a72ff);color:#fff;
+  font-weight:800;letter-spacing:.2px;box-shadow:0 10px 24px rgba(107,77,246,.35);
+}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(107,77,246,.45)}
+
+/* FAQs */
+.faqs-section .faq-item{border:1px solid var(--quz-border);border-radius:16px;background:#fff}
+.faqs-section .faq-question{padding:22px 24px}
+.faqs-section .faq-answer{padding:0 24px}
+
+/* Footer */
+.quz-footer{background:var(--quz-deep);color:#fff;padding:64px 0 28px}
+.quz-footer .footer-section h4{color:#cfcaff}
+.quz-footer a{color:#f0efff;opacity:.9}
+.quz-footer a:hover{opacity:1;color:#fff}
+
+/* Responsive */
+@media (max-width:1024px){
+  .main-title.quz-display{font-size:36px}
+}
+@media (max-width:768px){
+  .nav-links{display:none}
+  .main-title.quz-display{font-size:30px}
+  .row-split{flex-direction:column;gap:10px}
+}

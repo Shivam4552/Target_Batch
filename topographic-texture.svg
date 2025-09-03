@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <pattern id="topographic" patternUnits="userSpaceOnUse" width="100" height="100">
+      <path d="M20 10c10 0 15 10 25 10s15-10 25-10 15 10 25 10 15-10 5-10" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/>
+      <path d="M10 20c15 0 20 15 35 15s20-15 35-15 20 15 35-15 20 15 0 15" stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none"/>
+      <path d="M15 35c12 0 18 12 30 12s18-12 30-12 18 12 30-12 18 12-5 12" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/>
+      <path d="M25 50c8 0 12 8 20 8s12-8 20-8 12 8 20-8 12 8 15 8" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/>
+      <path d="M5 65c20 0 25 20 45 20s25-20 45-20 25 20 45-20 25 20 10 20" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+      <path d="M30 80c6 0 9 6 15 6s9-6 15-6 9 6 15-6 9 6 25 6" stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#topographic)"/>
+</svg>
