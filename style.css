@@ -171,7 +171,7 @@ section h1, aside h1, nav h1, article h1 {
     right: 0;
     bottom: 0;
     background: 
-        url('topographic-texture.svg'),
+        url('./topographic-texture.svg'),
         linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.03) 50%, transparent 70%),
         linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.02) 50%, transparent 70%);
     background-size: 200px 200px, cover, cover;
